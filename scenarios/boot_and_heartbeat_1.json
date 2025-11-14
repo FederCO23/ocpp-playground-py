@@ -1,0 +1,9 @@
+{
+  "cp_id": "CP_1",
+  "server_url": "ws://localhost:9000",
+  "script": [
+    { "action": "boot" },
+    { "action": "wait", "seconds": 30 },
+    { "action": "exit" }
+  ]
+}

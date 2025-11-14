@@ -1,0 +1,15 @@
+{
+  "cp_id": "CP_2",
+  "server_url": "ws://localhost:9000",
+  "script": [
+    { "action": "boot" },
+    { "action": "wait", "seconds": 5 },
+    { "action": "status", "status": "Preparing" },
+    { "action": "authorize", "idTag": "ABC123" },
+    { "action": "start_transaction", "connectorId": 1, "idTag": "ABC123" },
+    { "action": "wait", "seconds": 20 },
+    { "action": "meter_values", "values": [1.0, 1.5, 2.1] },
+    { "action": "stop_transaction" },
+    { "action": "exit" }
+  ]
+}
